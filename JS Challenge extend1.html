@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Challenge</title>
+
+    <style>
+        .btn {
+            width: 120px;
+            height: 50px;
+            background-color: rgb(77, 77, 77);
+            text-align: center;
+            line-height: 50px;
+            color: white;
+            font-weight: 900;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="btn"> CLICK HERE</div>
+    <img class="puppy"
+        src="https://i.cbc.ca/1.5507480.1585002199!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/puppy-facts.jpg"
+        alt="">
+
+    <script>
+
+        var btn = document.querySelector(".btn")
+        var img = document.querySelector(".puppy")
+
+        btn.onclick = function () {
+            if (img.src == "https://i.cbc.ca/1.5507480.1585002199!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/puppy-facts.jpg") {
+                img.src = "https://cdn.wimmel-napkins.com/F/1/AM/g13312895.jpg"
+                console.log("puppy")
+            } 
+            
+            
+            else {
+                img.src = "https://i.cbc.ca/1.5507480.1585002199!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/puppy-facts.jpg"
+
+                console.log("dog")
+            }
+        }
+
+    </script>
+</body>
+
+</html>

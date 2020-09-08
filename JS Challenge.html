@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Challenge</title>
+
+</head>
+<body>
+    <img class="puppy" src="https://i.cbc.ca/1.5507480.1585002199!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/puppy-facts.jpg" alt="">
+    
+    <script>
+        var img = document.querySelector(".puppy")
+        
+        img.onclick = function() {
+            if (img.src == "https://i.cbc.ca/1.5507480.1585002199!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/puppy-facts.jpg") {
+                img.src = "https://media.apnarm.net.au/media/images/2020/03/18/v3imagesbin1084acc28c79e2b71b023d2b3b765223-of8z3fhc4ieuw4lm0u2_t1880.jpg"
+                console.log("puppy")
+            } else {
+                img.src = "https://i.cbc.ca/1.5507480.1585002199!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/puppy-facts.jpg"
+                console.log("dog")
+            }
+        }
+
+    </script>
+</body>
+</html>
